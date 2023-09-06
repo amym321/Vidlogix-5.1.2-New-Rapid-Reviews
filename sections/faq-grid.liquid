@@ -1,0 +1,419 @@
+{% comment %} FAQ Grid for pdp faq. left text - am {% endcomment %}
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<Div class="faq-grid-section {% unless template == 'page.terms' %} index-section {% endunless %}">
+
+  <div class="page-width page-width--narrow ">
+
+    {%- if section.settings.title != blank -%}
+      <header class="section-header">
+        <h2 class="section-header__title">
+          {{ section.settings.title | escape }}
+        </h2>
+      </header>
+    {%- endif -%}
+
+
+    <div class="faq-grid">
+
+      <div class="faq-grid-left">
+        <div class="faq-sticky">
+          <p class="left-subtitle">{{section.settings.left_subtitle}}</p>
+          <h2 class="left-title">{{section.settings.left_title}}</h2>
+          {% comment %} <div class="left-text">{{section.settings.left_text}} <a href="/pages/contact">{{section.settings.left_chat_text}}</a></div> {% endcomment %}
+          {% comment %} <div class="left-text">{{section.settings.left_text}} <a href="#" onclick="Beacon('open');">{{section.settings.left_chat_text}}</a></div> {% endcomment %}
+          <div class="left-text">{{section.settings.left_text}} <span id="beacon-faq">{{section.settings.left_chat_text}}</span></div>
+        </div>
+      </div>
+      
+      <div id="right-wrapper" class="faq-grid-right">
+        {%- if section.blocks.size > 0 -%}
+          {%- for block in section.blocks -%}
+
+          {% comment %} UPS Map popup - am {% endcomment %}
+          {% render 'map-popup' %}
+
+            <div {{ block.shopify_attributes }}>
+              {% case block.type %}
+
+                {% when 'rich-text'%}
+                  <div class="faq-grid-text {% unless template == 'page.terms' %} index-section {% endunless %} index-section--faq">
+                    <div class="text-{{ block.settings.align_text }}">
+                      {%- if block.settings.title != blank -%}
+                        <div class="section-header">
+                          <h2 class=" section-header__title">
+                            {{ block.settings.title | escape }}
+                          </h2>
+                        </div>
+                      {%- endif -%}
+                      {%- if block.settings.text != blank -%}
+                        <div class="rte">
+                          {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
+                            {{ block.settings.text }}
+                          {%- if block.settings.enlarge_text %}</div>{% endif -%}
+                        </div>
+
+                        {% if block.settings.button_chat %}
+                        <a href="/pages\/contact"  class="btn">
+                          {{ block.settings.button_text }}
+                        </a>
+                      {% elsif block.settings.button_link != blank %}
+                          <a class="btn" href="{{ block.settings.button_link }}" class="button">{{ block.settings.button_text }}</a>
+                        {% endif %}
+
+                      {%- endif -%}
+
+                    </div>
+                  </div>
+
+                {% when 'question'%}
+                  <div class="faq-section" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div id="{% if block.settings.anchor_link != empty %}{{ block.settings.anchor_link }}{% endif %}"></div>
+
+                      <div class="collapsible-container">
+                        <button type="button" class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left" aria-controls="FAQ-content-{{ block.id }}">
+                          {%- render 'collapsible-icons-alt', no_circle: true -%}
+                          <span itemprop="name">{{ block.settings.title }}</span>
+                        </button>
+                        <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                          <div class="collapsible-content__inner collapsible-content__inner--faq rte" itemprop="text">
+                          {% comment %} UPS Map popup - am {% endcomment %}
+                            {% if block.settings.map_popup %}
+                              {% if block.settings.map_text != empty %}
+                                {% comment %} custom coded popup - am {% endcomment %}
+                                <a id="map-btn" class="" style="cursor: pointer;">{{ block.settings.map_text }}</a> 
+                              {% else %}
+                                {% comment %} Help Scout Beacon popup - am {% endcomment %}
+                                <a href="#" data-beacon-article-modal="62c84d1ad242501d78c628c3">UPS Time in Transit Map</a>
+                              {% endif %}
+                            {% endif %}
+                            {{ block.settings.text }}
+                              {% comment %} code added - am. added more text & button to question block{% endcomment %}
+                              {% if block.settings.button_chat2  %}
+                              <a href="/pages\/contact" class="btn">
+                                {{ block.settings.button_text2 }}
+                              </a>
+                            {% elsif block.settings.button_link2 != blank %}
+                              <a class="btn" href="{{ block.settings.button_link2 }}" class="button">
+                                {{ block.settings.button_text2 }}
+                              </a>
+                            {% endif %}
+                            {% if block.settings.text2 %}{{ block.settings.text2 }}{% endif %}
+                          </div>
+
+                        </div>
+                      </div>
+
+                  </div>
+              {% endcase %}
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if section.blocks.size == 0 -%}
+      <div class="placeholder-noblocks">
+        {{ 'home_page.onboarding.no_content' | t }}
+      </div>
+    {%- endif -%}
+  </div>
+</Div>
+
+
+<script>
+  (function(){
+    var beaconFaq = document.getElementById('beacon-faq');
+
+    if (beaconFaq != null){
+      beaconFaq.onclick = function() {
+        Beacon('open');
+        Beacon('navigate', '/ask/message/');
+      }
+    }
+  })();
+</script>
+
+
+<style>
+.faq-grid-section {
+  margin: 0;
+  padding: 75px 0;
+  background-color: {{section.settings.faq_grid_clr_section}};
+}
+@media (max-width: 768px) {
+  .faq-grid-section {
+      margin: 0;
+      padding: 40px 0;
+  }
+}
+
+.faq-grid-section .page-width--narrow {
+  max-width: 1500px;
+}
+
+.faq-grid {
+  display: grid
+}
+@media (min-width: 769px) {
+  .faq-grid {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 6.4rem;
+  }
+}
+
+.faq-sticky {
+  top: 0;
+  position: sticky;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 769px) {
+  .faq-grid-left {
+    padding-left: 10px;
+  }
+}
+
+.faq-grid-left .left-subtitle {
+  padding-top: 20px;
+}
+
+.faq-grid-left .left-title {
+  margin-bottom:25px;
+}
+
+@media (max-width: 768px) {
+  .faq-grid-left .left-text {
+    padding-bottom: 35px;
+  }
+}
+
+.faq-grid-left .left-text p {
+  margin:0;
+  display: inline;
+}
+
+.faq-grid-left .left-text a,
+#beacon-faq {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  color: var(--colorLink);
+  border-bottom-color: #f6c12f;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.faq-grid-left .left-text a:after,
+#beacon-faq:after {
+
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid currentColor;
+  transition: width .5s ease;
+}
+.faq-grid-left .left-text a:hover:after,
+#beacon-faq:hover:after {
+
+    width: 100%;
+}
+
+.faq-section {
+  border-bottom:none;
+}
+
+.collapsible-container {
+  border-radius: 0.8rem;
+  background-color:{{section.settings.faq_grid_clr_faq}};
+  margin: 20px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 2rem 6rem #3440540a;
+  border: solid 1px #f2f2f2; /*#f8f6f7;*/
+}
+</style>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+  {
+    "name": "FAQ Grid",
+    "class": "nothing",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Overall Section Heading",
+        "default": "FAQs"
+      },
+      {
+        "type": "text",
+        "id": "left_subtitle",
+        "label": "Suheading on the left",
+        "default": "We have answers!"
+      },
+      {
+        "type": "text",
+        "id": "left_title",
+        "label": "Heading on the left",
+        "default": "Questions?"
+      },
+      {
+        "type": "richtext",
+        "id": "left_text",
+        "label": "Text on the left",
+        "default": "<p>Can't find the answer you're looking for? Visit our FAQs or</p>"
+      },
+      {
+        "type": "text",
+        "id": "left_chat_text",
+        "label": "Text for Beacon chat",
+        "default": "chat with our friendly team."
+      },
+      {
+        "type": "color",
+        "id": "faq_grid_clr_section",
+        "label": "Section background color",
+        "default": "#f8f6f7"
+      },
+      {
+        "type": "color",
+        "id": "faq_grid_clr_faq",
+        "label": "FAQ background color",
+        "default": "#ffffff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "rich-text",
+        "name": "Rich text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Rich text"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
+          },
+          
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button text",
+            "default": "Button Text"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_chat",
+            "label": "Button launches chat widget. Defaults to Contact page for now",
+            "default": false
+          },
+          {
+            "type": "select",
+            "id": "align_text",
+            "label": "Text alignment",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Centered"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "question",
+        "name": "Question",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Question",
+            "default": "Frequently asked question"
+          },
+          {
+            "type": "checkbox",
+            "id": "map_popup",
+            "label": "Link opens UPS map popup.",
+            "default": false
+          },
+          {
+            "type": "richtext",
+            "id": "map_text",
+            "label": "Map Popup Text",
+            "default": "<p></p>",
+            "info": "Empty text opens Beacon popup. Entered text opens custom popup."
+          },
+
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text Response",
+            "default": "<p>Use the text to answer questions</p>"
+          },
+          {
+            "type": "url",
+            "id": "button_link2",
+            "label": "Button link"
+          },
+          {
+            "type": "text",
+            "id": "button_text2",
+            "label": "Button text",
+            "default": "Button text"
+          },
+          {
+            "type": "checkbox",
+            "id": "button_chat2",
+            "label": "Button launches chat widget. Defaults to Contact page for now",
+            "default": false
+          },
+          {
+            "type": "richtext",
+            "id": "text2",
+            "label": "Text Response",
+            "default": "<p>Use the text to answer questions</p>"
+          },
+          {
+            "type": "text",
+            "id": "anchor_link",
+            "label": "Anchor link keyword"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "FAQ Grid",
+      "blocks": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "question"
+        }
+      ]
+    }]
+  }
+{% endschema %}
