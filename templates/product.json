@@ -150,18 +150,6 @@
         "related_count": 2
       }
     },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "settings": {
-        "recent_count": 4
-      }
-    },
-    "collection-return": {
-      "type": "collection-return",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1694129595fc822e5b": {
       "type": "apps",
       "blocks": {
@@ -212,6 +200,18 @@
       "settings": {
         "full_width": false,
         "space_around": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "recent_count": 4
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {
       }
     },
     "4db580b1-2115-4bd5-a7eb-e028381e3f41": {
@@ -501,9 +501,9 @@
     "1659635467b4378b21",
     "sub",
     "product-recommendations",
+    "1694129595fc822e5b",
     "recently-viewed",
     "collection-return",
-    "1694129595fc822e5b",
     "4db580b1-2115-4bd5-a7eb-e028381e3f41",
     "text-and-image",
     "8339fe66-b2a1-4fad-8215-0d8537e6e2d4",
