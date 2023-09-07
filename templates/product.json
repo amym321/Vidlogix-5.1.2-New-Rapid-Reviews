@@ -449,6 +449,58 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "1694129595fc822e5b": {
+      "type": "apps",
+      "blocks": {
+        "5deb78d3-5464-407d-bf1c-1b889a1ca8ab": {
+          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/reviews-stars-badge\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+          "settings": {
+            "link_color": "",
+            "stars_badge_selector": "h1",
+            "insert_behavior": "after",
+            "stars_hide_zero": true,
+            "stars_alignment": "default",
+            "stars_label_active": true,
+            "stars_badge_label": "",
+            "stars_q_label_active": false,
+            "ask_q_zero": false,
+            "stars_questions_label": ""
+          }
+        },
+        "7963848b-a911-4efd-ac87-a4159ef5bca8": {
+          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/reviews\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+          "settings": {
+            "hide": "show",
+            "link_color": "",
+            "layout": "rows",
+            "width": "default",
+            "name_trun": true,
+            "variant_name": false,
+            "separate_tabs": false,
+            "section_title": "",
+            "section_title_questions": "",
+            "section_title_entity": "",
+            "section_title_align": "left",
+            "label_tab_r": "",
+            "label_prompt_r": "",
+            "label_tab_q": "",
+            "label_prompt_q": "",
+            "label_search_placeholder": "",
+            "entity_id_override": "",
+            "entity_handle_override": "",
+            "entity_type_override": ""
+          }
+        }
+      },
+      "block_order": [
+        "5deb78d3-5464-407d-bf1c-1b889a1ca8ab",
+        "7963848b-a911-4efd-ac87-a4159ef5bca8"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -464,6 +516,7 @@
     "text-and-image",
     "8339fe66-b2a1-4fad-8215-0d8537e6e2d4",
     "1643590083d72e73b9",
-    "loox-product-reviews-app-section"
+    "loox-product-reviews-app-section",
+    "1694129595fc822e5b"
   ]
 }
