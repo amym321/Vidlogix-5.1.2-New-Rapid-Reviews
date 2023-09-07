@@ -163,8 +163,8 @@
         ".index-section {background: #f8f6f7;}"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "full_width": true,
+        "space_around": false
       }
     },
     "3b32f828-d327-4c96-98d7-6c8310903c53": {
