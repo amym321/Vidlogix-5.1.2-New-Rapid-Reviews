@@ -138,6 +138,32 @@
         "more_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0056\/9632\/3651\/files\/Vidlogix-Catalog.pdf?v=1687482728"
       }
     },
+    "16941291514c84d82e": {
+      "type": "apps",
+      "blocks": {
+        "ba46f537-0cb6-471c-8f86-6dd483ac1cb8": {
+          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/reviews-global-featured-list\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+          "settings": {
+            "hide_inline_badge": true,
+            "url": "",
+            "link_color": "",
+            "layout": "scroller",
+            "width": "default",
+            "name_trun": false,
+            "section_title": "",
+            "section_title_entity": "",
+            "section_title_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "ba46f537-0cb6-471c-8f86-6dd483ac1cb8"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "3b32f828-d327-4c96-98d7-6c8310903c53": {
       "type": "testimonials-about",
       "blocks": {
@@ -366,24 +392,17 @@
         "unsubscribe_url": "https:\/\/vidlogix.com\/pages\/legal?main_block=L-left-faq-1&sub_block=L-faq-1-1",
         "show_divider": false
       }
-    },
-    "16601287683bcf7464": {
-      "type": "apps",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
     }
   },
   "order": [
     "slideshow",
     "1637960314fb05cbb5",
+    "16941291514c84d82e",
     "3b32f828-d327-4c96-98d7-6c8310903c53",
     "16374663436f00eb2c",
     "16374606876c4b0894",
     "163746679950095452",
     "blog-posts",
-    "16374675471ddb7cfa",
-    "16601287683bcf7464"
+    "16374675471ddb7cfa"
   ]
 }
