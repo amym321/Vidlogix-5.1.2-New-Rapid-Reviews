@@ -159,6 +159,9 @@
       "block_order": [
         "ba46f537-0cb6-471c-8f86-6dd483ac1cb8"
       ],
+      "custom_css": [
+        ".index-section {background: #f8f6f7;}"
+      ],
       "settings": {
         "full_width": false,
         "space_around": true
