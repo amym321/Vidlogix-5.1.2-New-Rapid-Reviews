@@ -213,8 +213,8 @@
         "18f0bf73-8f7b-4bae-aab1-5952c6809ff5"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "full_width": true,
+        "space_around": false
       }
     },
     "recently-viewed": {
