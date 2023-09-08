@@ -151,6 +151,7 @@
         {%- endif -%}
         
         {%- if settings.enable_product_reviews -%}
+          *FOO
           {%- assign avg = product.metafields.rapid_reviews.counts.value.r.rating.avg -%}
           {%- unless avg %}{%- assign avg = 0 -%}{% endunless -%}
           {%- assign count = product.metafields.rapid_reviews.counts.value.r.counts.core.total -%}
