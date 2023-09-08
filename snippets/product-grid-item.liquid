@@ -149,6 +149,7 @@
         {%- if settings.vendor_grid_enable -%}
           <div class="grid-product__vendor">{{ product.vendor }}</div>
         {%- endif -%}
+        *FOO
         
         {%- if settings.enable_product_reviews -%}
           {%- assign avg = product.metafields.rapid_reviews.counts.value.r.rating.avg -%}
