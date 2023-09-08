@@ -191,11 +191,26 @@
             "entity_handle_override": "",
             "entity_type_override": ""
           }
+        },
+        "18f0bf73-8f7b-4bae-aab1-5952c6809ff5": {
+          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/reviews-global-featured-list\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+          "settings": {
+            "hide_inline_badge": true,
+            "url": "",
+            "link_color": "",
+            "layout": "scroller",
+            "width": "default",
+            "name_trun": true,
+            "section_title": "",
+            "section_title_entity": "",
+            "section_title_align": "left"
+          }
         }
       },
       "block_order": [
         "5deb78d3-5464-407d-bf1c-1b889a1ca8ab",
-        "7963848b-a911-4efd-ac87-a4159ef5bca8"
+        "7963848b-a911-4efd-ac87-a4159ef5bca8",
+        "18f0bf73-8f7b-4bae-aab1-5952c6809ff5"
       ],
       "settings": {
         "full_width": false,
@@ -292,6 +307,7 @@
         "template--14938200277059__4db580b1-2115-4bd5-a7eb-e028381e3f41-16866008280212c890-4",
         "17d60afe-618a-4390-8f48-6e3840427901"
       ],
+      "disabled": true,
       "settings": {
         "title": "What our customers are saying",
         "align_text": "left",
