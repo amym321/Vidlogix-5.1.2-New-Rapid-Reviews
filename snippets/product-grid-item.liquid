@@ -151,7 +151,9 @@
         {%- endif -%}
         
         {%- if settings.enable_product_reviews -%}
-          <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+          {% comment %}
+            <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+          {% endcomment %}
         {%- endif -%}
 
         <div class="grid-product__price">
