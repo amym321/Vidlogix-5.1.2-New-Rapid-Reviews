@@ -85,6 +85,19 @@
             "filter_type": "include",
             "color_swatches": false
           }
+        },
+        "ecd1431a-3bf9-4c8f-8387-b88b723ac82d": {
+          "type": "shopify:\/\/apps\/search-x\/blocks\/search-scope-labels\/77dff34c-cbf6-42ff-843d-81fa5c648f3d",
+          "settings": {
+            "products_label": "",
+            "products_hide": false,
+            "collections_label": "",
+            "collections_hide": false,
+            "articles_label": "",
+            "articles_hide": true,
+            "pages_label": "",
+            "pages_hide": false
+          }
         }
       },
       "block_order": [
@@ -93,7 +106,8 @@
         "a199486e-7451-4ab0-ade3-1ca27cddbf08",
         "379cbaac-53c6-41a6-8849-93df2e7b7732",
         "4ebd04d9-3d5b-47af-be00-055c1e17c838",
-        "d0cec039-6485-4d3f-b4f6-6f06d2a314b8"
+        "d0cec039-6485-4d3f-b4f6-6f06d2a314b8",
+        "ecd1431a-3bf9-4c8f-8387-b88b723ac82d"
       ],
       "settings": {
         "full_width": true,
