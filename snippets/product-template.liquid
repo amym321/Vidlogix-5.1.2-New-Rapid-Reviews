@@ -149,12 +149,14 @@
 
                   {%- if settings.enable_product_reviews -%}
 
-                    {% comment %} add Loox Reviews- am{% endcomment %}
-                    <div class="product-single__review-link animate-scroll">
-                      <a href="#reviews">
-                        <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
-                      </a>
-                    </div>
+                    {% comment %}
+                      {% comment %} add Loox Reviews- am{% endcomment %}
+                      <div class="product-single__review-link animate-scroll">
+                        <a href="#reviews">
+                          <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+                        </a>
+                      </div>
+                    {% endcomment %}
 
                   {%- endif -%}
 
