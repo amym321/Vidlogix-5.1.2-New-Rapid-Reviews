@@ -96,13 +96,6 @@
         "enable_sort": true
       }
     },
-    "1659638659b738f595": {
-      "type": "apps",
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
-    },
     "1694131743e0de16a1": {
       "type": "apps",
       "blocks": {
@@ -129,7 +122,6 @@
     "collection-header",
     "promo-grid",
     "main-collection",
-    "1659638659b738f595",
     "1694131743e0de16a1"
   ]
 }
