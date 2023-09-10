@@ -14,7 +14,7 @@
           "settings": {
             "placeholder_label": "",
             "facets_sort": "",
-            "sort_default": "popular",
+            "sort_default": "latest",
             "collection_no_images": true,
             "show_all_variants": false,
             "hide_style_name": false,
