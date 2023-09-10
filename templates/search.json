@@ -14,6 +14,8 @@
           "settings": {
             "placeholder_label": "",
             "facets_sort": "",
+            "sort_default": "popular",
+            "collection_no_images": true,
             "show_all_variants": false,
             "hide_style_name": false,
             "show_variant_thumbs": false,
@@ -23,6 +25,9 @@
             "column_layout": "left",
             "quickshop_show": true,
             "quickshop_open_label": "Quick view",
+            "quickshop_button_bg_color": "",
+            "quickshop_button_text_color": "",
+            "quickshop_button_radius": 0,
             "quickshop_simple_labels": false,
             "reviews": "rapid",
             "pagination": "auto",
