@@ -1,0 +1,8 @@
+<script>
+  (function () {
+    if (window.sx_loaded) return; window.sx_loaded = true;
+    var sxt = document.createElement('script'); sxt.async = true;
+    sxt.src = 'https://apps.belkapp.com/api/search/files/{{ shop.permanent_domain }}/searchx-core';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sxt, s);
+  })();
+</script>
