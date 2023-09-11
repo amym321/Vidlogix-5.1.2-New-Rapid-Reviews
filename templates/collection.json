@@ -146,12 +146,24 @@
             "filter_type": "include",
             "color_swatches": false
           }
+        },
+        "89f09925-aa4c-414a-9e3e-fae8900cab6f": {
+          "type": "shopify:\/\/apps\/search-x\/blocks\/facet-options\/77dff34c-cbf6-42ff-843d-81fa5c648f3d",
+          "settings": {
+            "title": "option_0",
+            "hide": true,
+            "label": "",
+            "filter": "",
+            "filter_type": "include",
+            "color_swatches": false
+          }
         }
       },
       "block_order": [
         "0569fa1d-f440-4f49-a9eb-47c6ef15e1bf",
         "a206ddec-dc5f-4b2b-9ce3-b81ecddd0f8d",
-        "f207a43e-a110-4f07-ae7b-56d251b67561"
+        "f207a43e-a110-4f07-ae7b-56d251b67561",
+        "89f09925-aa4c-414a-9e3e-fae8900cab6f"
       ],
       "settings": {
         "full_width": false,
