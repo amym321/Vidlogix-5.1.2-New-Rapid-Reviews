@@ -88,12 +88,62 @@
         "1934ea7b-8077-42ca-92df-f91673352206",
         "product_grid"
       ],
+      "disabled": true,
       "settings": {
         "enable_sidebar": true,
         "collapsed": false,
         "filter_style": "sidebar",
         "enable_color_swatches": false,
         "enable_sort": true
+      }
+    },
+    "16943902706858815f": {
+      "type": "apps",
+      "blocks": {
+        "0569fa1d-f440-4f49-a9eb-47c6ef15e1bf": {
+          "type": "shopify:\/\/apps\/search-x\/blocks\/collection-results\/77dff34c-cbf6-42ff-843d-81fa5c648f3d",
+          "settings": {
+            "placeholder_label": "",
+            "facets_sort": "",
+            "show_all_variants": false,
+            "hide_style_name": false,
+            "show_variant_thumbs": false,
+            "hide_column": false,
+            "column_collapse_show": false,
+            "column_collapse_default": false,
+            "column_layout": "left",
+            "quickshop_show": false,
+            "quickshop_open_label": "Quick Shop",
+            "quickshop_button_bg_color": "",
+            "quickshop_button_text_color": "",
+            "quickshop_button_radius": 0,
+            "quickshop_simple_labels": false,
+            "reviews": "rapid",
+            "pagination": "auto",
+            "hide_sold_out": false,
+            "hide_h1": false,
+            "images_off": false
+          }
+        },
+        "a206ddec-dc5f-4b2b-9ce3-b81ecddd0f8d": {
+          "type": "shopify:\/\/apps\/search-x\/blocks\/facet-options\/77dff34c-cbf6-42ff-843d-81fa5c648f3d",
+          "settings": {
+            "title": "collections",
+            "hide": true,
+            "label": "",
+            "filter": "",
+            "filter_type": "include",
+            "color_swatches": false
+          }
+        }
+      },
+      "block_order": [
+        "0569fa1d-f440-4f49-a9eb-47c6ef15e1bf",
+        "a206ddec-dc5f-4b2b-9ce3-b81ecddd0f8d"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     },
     "1694131743e0de16a1": {
@@ -122,6 +172,7 @@
     "collection-header",
     "promo-grid",
     "main-collection",
+    "16943902706858815f",
     "1694131743e0de16a1"
   ]
 }
