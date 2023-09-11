@@ -154,7 +154,7 @@
         "f207a43e-a110-4f07-ae7b-56d251b67561"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "space_around": false
       }
     },
