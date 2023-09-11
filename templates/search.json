@@ -115,8 +115,8 @@
         "d0cec039-6485-4d3f-b4f6-6f06d2a314b8"
       ],
       "settings": {
-        "full_width": true,
-        "space_around": true
+        "full_width": false,
+        "space_around": false
       }
     }
   },
