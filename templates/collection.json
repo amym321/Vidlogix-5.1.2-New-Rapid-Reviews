@@ -154,8 +154,8 @@
         "f207a43e-a110-4f07-ae7b-56d251b67561"
       ],
       "settings": {
-        "full_width": false,
-        "space_around": true
+        "full_width": true,
+        "space_around": false
       }
     },
     "1694131743e0de16a1": {
