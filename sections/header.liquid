@@ -148,7 +148,7 @@
                     {%- if settings.search_enable -%}
                       {% comment %} new search input field - am {% endcomment %}
                       <form class="search search-bar-form small--hide" action="/search">
-                        <div id="sx-autocomplete"></div>
+                        <div id="sx-autocomplete" data-view="desktop"></div>
                         <div class="search-container">
                           <input type="text" placeholder="Search" name="q" value="{{ search.terms | escape }}" class="search-input" />
                           <input type="hidden" name="options[prefix]" value="last" aria-hidden="true">
