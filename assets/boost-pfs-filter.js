@@ -13,7 +13,7 @@ if (typeof boostPFSThemeConfig !== 'undefined') {
   };
 }
 
-var isFirstLoad = boostPFSFilterConfig.general.loadProductFirst;
+var isFirstLoad = boostPFSFilterConfig ? boostPFSFilterConfig.general.loadProductFirst : null;
 var numberQuickViewModalLoaded = 0;
 (function() {
   /* This is to inject boost components into this scope, so we can override component's function */
