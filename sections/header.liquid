@@ -149,6 +149,7 @@
                       {% comment %} new search input field - am {% endcomment %}
                       <form class="search search-bar-form small--hide" action="/search">
                         <div class="search-container">
+                          <div id="sx-autocomplete"></div>
                           <input type="text" placeholder="Search" name="q" value="{{ search.terms | escape }}" class="search-input" />
                           <input type="hidden" name="options[prefix]" value="last" aria-hidden="true">
                         </div>
