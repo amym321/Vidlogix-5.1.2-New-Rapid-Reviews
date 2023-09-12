@@ -173,7 +173,6 @@
       "blocks": {
         "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-0": {
           "type": "testimonial",
-          "disabled": true,
           "settings": {
             "icon": "5-stars",
             "testimonial_title": "I placed my order",
