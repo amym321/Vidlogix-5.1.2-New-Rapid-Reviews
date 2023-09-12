@@ -159,6 +159,7 @@
       "block_order": [
         "ba46f537-0cb6-471c-8f86-6dd483ac1cb8"
       ],
+      "disabled": true,
       "custom_css": [
         ".rapid_reviews_global_featured_list {background: #f8f6f7;}"
       ],
@@ -246,7 +247,6 @@
         "template--14938200014915__3b32f828-d327-4c96-98d7-6c8310903c53-168658820374239bb3-4",
         "9c91814c-acc9-41e4-bee6-070625b22fdd"
       ],
-      "disabled": true,
       "settings": {
         "title": "What our customers are saying",
         "align_text": "left",
