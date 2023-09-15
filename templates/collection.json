@@ -166,7 +166,7 @@
         "89f09925-aa4c-414a-9e3e-fae8900cab6f"
       ],
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "space_around": false
       }
     },
