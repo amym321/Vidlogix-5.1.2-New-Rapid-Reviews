@@ -109,7 +109,7 @@
             "hide_style_name": false,
             "show_variant_thumbs": false,
             "hide_column": false,
-            "column_collapse_show": false,
+            "column_collapse_show": true,
             "column_collapse_default": false,
             "column_layout": "left",
             "quickshop_show": true,
