@@ -140,7 +140,7 @@
           "type": "shopify:\/\/apps\/search-x\/blocks\/facet-options\/77dff34c-cbf6-42ff-843d-81fa5c648f3d",
           "settings": {
             "title": "tags",
-            "hide": false,
+            "hide": true,
             "label": "",
             "filter": "",
             "filter_type": "include",
