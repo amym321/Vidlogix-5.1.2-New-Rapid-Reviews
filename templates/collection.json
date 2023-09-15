@@ -127,6 +127,7 @@
         },
         "a206ddec-dc5f-4b2b-9ce3-b81ecddd0f8d": {
           "type": "shopify:\/\/apps\/search-x\/blocks\/facet-options\/77dff34c-cbf6-42ff-843d-81fa5c648f3d",
+          "disabled": true,
           "settings": {
             "title": "collections",
             "hide": true,
