@@ -119,7 +119,7 @@
             "quickshop_button_radius": 30,
             "quickshop_simple_labels": false,
             "reviews": "rapid",
-            "pagination": "auto",
+            "pagination": "paged",
             "hide_sold_out": false,
             "hide_h1": false,
             "images_off": false
