@@ -115,7 +115,7 @@
             "quickshop_show": true,
             "quickshop_open_label": "Quick Shop",
             "quickshop_button_bg_color": "#f6c12f",
-            "quickshop_button_text_color": "",
+            "quickshop_button_text_color": "#ffffff",
             "quickshop_button_radius": 30,
             "quickshop_simple_labels": false,
             "reviews": "rapid",
