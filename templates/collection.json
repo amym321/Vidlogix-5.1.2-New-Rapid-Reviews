@@ -107,7 +107,7 @@
             "facets_sort": "",
             "show_all_variants": false,
             "hide_style_name": false,
-            "show_variant_thumbs": false,
+            "show_variant_thumbs": true,
             "hide_column": false,
             "column_collapse_show": true,
             "column_collapse_default": false,
